@@ -1,0 +1,128 @@
+.container {
+  margin-top: 80px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0 0 11px;
+}
+
+.fixed-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+ 
+}
+
+.navbar {
+  background-color: #f9f9f9;
+   height: 60px !important;
+}
+.navbar-inner {
+  padding-left: 110px !important;
+  padding-right: 110px !important;
+}
+.contact-info a {
+  text-decoration: none;
+  color: #65696e;
+  font-size: 13px;
+}
+.contact-info a:hover{
+  color: #ed1c24;
+}
+.contact-info {
+    display: flex;
+    gap: 34px;
+    height: 35px;
+    line-height: 35px;
+}
+.contact-info i {
+    padding-right: 5px;
+}
+.fa-phone{
+    font-size: 10px;
+}
+.language-dropdown .languages {
+  cursor: pointer;
+  color: #ed1c24;
+
+}
+.lang-d{
+  color: black;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #ed1c24;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn {
+  background-color: #fff;
+  color: #ed1c24;
+}
+
+.sign-up-btn {
+  background-color: #ed1c24;
+  color: #fff;
+}
+
+
+.cart-icon-wrapper {
+  position: relative;
+}
+.cart-icon{
+  color: #000;
+  font-size: 20px;
+}
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #e12032;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .fixed-nav .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .sign-in-btn,
+  .sign-up-btn {
+    min-width: auto;
+    padding: 0 10px;
+  }
+} */

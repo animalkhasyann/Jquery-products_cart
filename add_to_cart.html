@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>Cart</h1>
+    <div id="cartContents"></div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        function getCookie(name) {
+            const cookieArr = document.cookie.split(";");
+            for (let i = 0; i < cookieArr.length; i++) {
+                const cookiePair = cookieArr[i].split("=");
+                if (cookiePair[0].trim() === name) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+
+        $(function () {
+            const cartStr = getCookie("cart");
+            console.log("Cookie read:", cartStr);
+            const cart = cartStr ? JSON.parse(cartStr) : [];
+
+            if (cart.length === 0) {
+                $('#cartContents').text('Cart is empty.');
+            } else {
+
+                cart.forEach(p => {
+                    $('#cartContents').append(`
+    <div class="cart-item" style="display:flex; align-items:center; margin-bottom:10px;">
+      <img src="${p.image}" alt="${p.name}" style="width:80px; height:auto; margin-right:10px;">
+      <div>
+        <p style="margin:0;">${p.name}</p>
+        <p style="margin:0;">${p.qty} pcs - $${(p.price * p.qty).toFixed(2)}</p>
+      </div>
+    </div>
+  `);
+                });
+
+            }
+        });
+    </script>
+</body>
+
+</html>

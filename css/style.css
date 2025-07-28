@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:  "Helvetica Neue Medium", helvetica, arial, sans-serif !important;;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #ffffff !important;
+
+}
+
+
