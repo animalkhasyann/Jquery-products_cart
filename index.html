@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search products</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -16,163 +17,345 @@
         <nav class="navbar">
             <div class="container-fluid d-flex justify-content-between align-items-center navbar-inner">
 
-                <div class="d-flex  flex-wrap contact-info align-items-center">
+                <div class="contact-info col-sm-6">
                     <a href="tel:+1(866)577-4040" class="contact">
-                        <i class="fa fa-phone"></i> 1(866)577-4040
+                        <i class="fa fa-phone icon"></i> 1(866)577-4040
                     </a>
                     <a href="mailto:info@hvhindustrial.com" class="contact">
-                        <i class="fa-solid fa-envelope"></i> info@hvhindustrial.com
+                        <i class="fa-solid fa-envelope icon"></i> info@hvhindustrial.com
                     </a>
                     <a href="#" class="contact">
-                        <i class="fa-solid fa-comment"></i> Chat Live
+                        <i class="fa-solid fa-comment icon"></i> Chat Live
                     </a>
                     <a href="#" class="contact">
-                        <i class="fa-solid fa-quote-left"></i> Get a Quote
+                        <i class="fa-solid fa-quote-left icon"></i> Get a Quote
                     </a>
                 </div>
 
+                <div class="item-div col-sm-6 top-header">
+                    <div class="d-flex align-items-center sign">
+                        <div class="language-dropdown">
+                            <span class="languages">Eng <i class="fas fa-chevron-down lang-d"></i></span>
+                        </div>
+                        <a href="#" class="sign-in-btn">SIGN IN</a>
+                        <a href="#" class="sign-up-btn">SIGN UP</a>
+                        <div class="cart-icon-wrapper">
+                            <a href="add_to_cart.html" id="cartLink" class="cart-basket">
+                                <img src="images\cart.svg" alt="cart" class="cart-icon">
+                                <p class="cart-badge">0</p>
+                            </a>
+                        </div>
+                        <div class="burger-menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
 
-                <div class="d-flex gap-3 align-items-center">
-                    <div class="language-dropdown">
-                        <span class="languages">Eng <i class="fas fa-chevron-down lang-d"></i></span>
-                    </div>
-                    <a href="#" class="sign-in-btn">SIGN IN</a>
-                    <a href="#" class="sign-up-btn">SIGN UP</a>
-                    <div class="cart-icon-wrapper">
-                        <a href="add_to_cart.html" id="cartLink" class="cart-basket">
-                            <img src="images\cart.svg" alt="cart" class="cart-icon">
-                            <p class="cart-badge">0</p>
-                        </a>
-                    </div>
                 </div>
+
             </div>
         </nav>
     </div>
 
-
-    <div class="container col-sm-9">
-        <div class="col-sm-12 padding-45">
-            <hr class="mini-hr">
-        </div>
-        <div class="mb-3 product p-3" data-id="312-3M-9" data-name="312 3M 9 HTD Timing Belts" data-price="4.50"
-            data-brand="BESTORQ" data-image="images\bestorq-timing-belts-L-H.jpg">
-            <div class="row g-3">
-                <div class="col-sm-3 shadow p-3 mb-5 bg-white d-flex align-items-center justify-content-center">
-                    <img src="images\bestorq-timing-belts-L-H.jpg" alt="Timing Belt" class="img-fluid" />
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 d-flex align-items-center justify-content-center">
+<div class="col-sm-9">
+                <div class="row"></div>
+                <div class="col-sm-12 padding-45">
+                    <hr class="mini-hr">
                 </div>
-
-                <div class="col-sm-5">
-                    <h5 class="mb-1 title">312 3M 9 HTD Timing Belts</h5>
-                    <p class="mb-1 cyan">BESTORQ</p>
-                    <p class="mb-1 ">MPN: <span class="underline">312-3M-9</span></p>
-                    <p class="text-muted small mb-2">
-                        312-3M-9 HTD timing / synchronous belts are the third generation of high capacity industrial
-                        belts offering reliable, trouble-free and economical alternative to chain drives. Compared to
-                        chain drives...<span><a href="#" class="cyan">Read more</a></span>
-                    </p>
-
-                </div>
-                <div class="col-sm-2 col-sm-2-mobile">
-                    <h5 class="text-end price">$4.50</h5>
-                    <input type="number" value="1" min="1" class="form-control number-count qty" />
-                    <p class="availability">
-                        Availability:
-                    </p>
-                </div>
-                <div class="col-sm-2 text-sm-end d-flex flex-column justify-content-between">
-                    <div>
-                        <button class="btn add-to-cart w-100">
-                            ADD TO CART
-                        </button>
-                        <p class="cyan shipping">Typically ships in: 2 days</p>
+                <div class="row padding15m product" data-id="312-3M-9" data-name="312 3M 9 HTD Timing Belts" data-price="4.50"
+        data-brand="BESTORQ" data-image="images\bestorq-timing-belts-L-H.jpg">
+                    <div class="col-sm-3 shadow-cabinet shadow">
+                        <a href="https://hvhindustrial.com/product/17106">
+                            <img src="images\bestorq-timing-belts-L-H.jpg" alt="312-3M-9 HTD Timing Belt"
+                                class="product_image image17106" />
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="https://hvhindustrial.com/product/17106" class="heading">
+                            <span>312 3M 9 HTD Timing Belts</span>
+                        </a>
+                        <p class="gray-p">
+                            <a href="https://hvhindustrial.com/brand/bestorq" class="cyan">BESTORQ</a>
+                        </p>
+                        <p class="gray-p">
+                            MPN:
+                            <span class="underline">312-3M-9</span>
+                        </p>
+                        <div class="showing-p">
+                            <p class="gray-p">
+                                312-3M-9 HTD timing / synchronous belts are the third generation of high capacity
+                                industrial belts offering reliable, trouble-free and economical alternative to chain
+                                drives. Compared to chain drives ...
+                                <span class="gray-p">
+                                    <a href="https://hvhindustrial.com/product/17106" class="cyan">Read more</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-2-mobile">
+                        <p class="price-p">$4.50</p>
+                        <input type="number" name="count" value="1" class="form-control number-count" min="1"
+                            id="number-count-17106">
+                        <br>
+                        <p class="availability">Availability:</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="padding-45"></p>
+                        <p class="price-p content-mobile">$4.50</p>
+                        <button type="button" name="button" class="add-cart add-btn-17106">Add to cart</button>
+                        <div class="gray-div">
+                            <span class="cyan">Typically ships in: 2 days</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="col-sm-12 padding-45">
-            <hr class="mini-hr">
-        </div>
-        <div class="mb-3 product p-3" data-id="312-3M-6" data-name="312-3M-9 Bando HTD Timing Belt" data-price="5.01"
-            data-brand="Bando" data-image="images\high-torque-drive-timing-belts-3M (1).png">
-            <div class="row g-3">
-                <div class="col-sm-3 shadow p-3 mb-5 bg-white rounded d-flex align-items-center justify-content-center">
-                    <img src="images\high-torque-drive-timing-belts-3M (1).png" alt="Timing Belt" class="img-fluid" />
-                </div>
+                <hr>
 
-                <div class="col-sm-5">
-                    <h5 class="mb-1 title">312-3M-6 Bando HTD Timing Belts</h5>
-                    <p class="mb-1 cyan">Bando</p>
-                    <p class="mb-1 ">MPN: <span class="underline">312-3M-6</span></p>
-                    <p class="text-muted small mb-2">
-                        300-3M-6 high torque drive (HTD) timing belts’ curvilinear tooth design improves stress
-                        distribution to provide high horsepower ratings over a wide speed range and high torque
-                        transmission at low sp...<span><a href="#" class="cyan">Read more</a></span>
-                    </p>
-
-                </div>
-                <div class="col-sm-2 col-sm-2-mobile">
-                    <h5 class="text-end price">$5.01</h5>
-                    <input type="number" value="1" min="1" class="form-control number-count qty" />
-                    <p class="availability">
-                        Availability:
-                    </p>
-                </div>
-                <div class="col-sm-2 text-sm-end d-flex flex-column justify-content-between">
-                    <div>
-                        <button class="btn add-to-cart w-100">
-                            ADD TO CART
-                        </button>
-                        <p class="stock">In stock</p>
-                        <p class="cyan shipping">Typically ships in: 1 day</p>
+                <div class="row padding15m product" data-id="312-3M-6" data-name="312-3M-6 Bando HTD Timing Belt" data-price="5.01"
+        data-brand="Bando" data-image="images\high-torque-drive-timing-belts-3M.png">
+                    <div class="col-sm-3 shadow-cabinet shadow">
+                        <a href="https://hvhindustrial.com/product/16226">
+                            <img src="images\high-torque-drive-timing-belts-3M.png" alt="312-3M-6 Bando HTD Timing Belt"
+                                class="product_image image17106" />
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="https://hvhindustrial.com/product/16226" class="heading">
+                            <span>312-3M-6 Bando HTD Timing Belt</span>
+                        </a>
+                        <p class="gray-p">
+                            <a href="https://hvhindustrial.com/brand/bando" class="cyan">Bando</a>
+                        </p>
+                        <p class="gray-p">
+                            MPN:
+                            <span class="underline">312-3M-6</span>
+                        </p>
+                        <div class="showing-p">
+                            <p class="gray-p">
+                                300-3M-6 high torque drive (HTD) timing belts’ curvilinear tooth design improves stress
+                                distribution to provide high horsepower ratings over a wide speed range and high torque
+                                transmission at low sp...
+                                <span class="gray-p">
+                                    <a href="https://hvhindustrial.com/product/16226" class="cyan">Read more</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-2-mobile">
+                        <p class="price-p">$5.01</p>
+                        <input type="number" name="count" value="1" class="form-control number-count" min="1"
+                            id="number-count-16226">
+                        <br>
+                        <p class="availability">Availability:</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="padding-45"></p>
+                        <p class="price-p content-mobile">$5.01</p>
+                        <button type="button" name="button" class="add-cart add-btn-16226">Add to cart</button>
+                        <div class="gray-div">
+                            <p>In stock</p>
+                            <p>
+                                <span class="cyan">Typically ships in: 1 day</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-sm-12 padding-45">
-            <hr class="mini-hr">
-        </div>
-        <div class="mb-3 product p-3" data-id="612-3M-9" data-name="612-3M-9 Bando HTD Timing Belt" data-price="6.72"
-            data-brand="Bando" data-image="images\high-torque-drive-timing-belts-3M.png">
-            <div class="row g-3">
-                <div class="col-sm-3 shadow p-3 mb-5 bg-white rounded d-flex align-items-center justify-content-center">
-                    <img src="images\high-torque-drive-timing-belts-3M.png" alt="Timing Belt" class="img-fluid" />
-                </div>
 
-                <div class="col-sm-5">
-                    <h5 class="mb-1 title">612-3M-9 Bando HTD Timing Belt</h5>
-                    <p class="mb-1 cyan">Bando</p>
-                    <p class="mb-1 ">MPN: <span class="underline">312-3M-6</span></p>
-                    <p class="text-muted small mb-2">
-                        612-3M-9 high torque drive (HTD) timing belts’ curvilinear tooth design improves stress
-                        distribution to provide high horsepower ratings over a wide speed range and high torque
-                        transmission at low sp...<span><a href="#" class="cyan">Read more</a></span>
-                    </p>
+                <hr>
 
-                </div>
-                <div class="col-sm-2 col-sm-2-mobile">
-                    <h5 class="text-end price">$6.72</h5>
-                    <input type="number" value="1" min="1" class="form-control number-count qty" />
-                    <p class="availability">
-                        Availability:
-                    </p>
-                </div>
-                <div class="col-sm-2 text-sm-end d-flex flex-column justify-content-between">
-                    <div>
-                        <button class="btn add-to-cart w-100">
-                            ADD TO CART
-                        </button>
-                        <p class="stock">In stock</p>
-                        <p class="cyan shipping">Typically ships in: 1 day</p>
+                <div class="row padding15m product" data-id="speed-312-3M-6" data-name="Speed Control 312 3M 6 HTD Timing Belt" data-price="7.15"
+        data-brand="Speed Control Inc" data-image="images\Speed-Control-HTD-Timing-Belt.jpg">
+                    <div class="col-sm-3 shadow-cabinet shadow">
+                        <a href="https://hvhindustrial.com/product/28831">
+                            <img src="images\Speed-Control-HTD-Timing-Belt.jpg" alt="Speed Control 312 3M 6 HTD Timing Belts"
+                                class="product_image image28831" />
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="https://hvhindustrial.com/product/28831" class="heading">
+                            <span>Speed Control 312 3M 6 HTD Timing Belts</span>
+                        </a>
+                        <p class="gray-p">
+                            <a href="https://hvhindustrial.com/brand/speed-control-inc" class="cyan">Speed Control Inc</a>
+                        </p>
+                        <p class="gray-p">
+                            MPN:
+                            <span class="underline">312-3M-6</span>
+                        </p>
+                        <div class="showing-p">
+                            <p class="gray-p">
+                                We offer 312-3M-6 High Torque Drive Timing Belts crafted from black rubber with fiberglass reinforcements.
+                                <span class="gray-p">
+                                    <a href="https://hvhindustrial.com/product/28831" class="cyan">Read more</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-sm-2-mobile">
+                        <p class="price-p">$7.15</p>
+                        <input type="number" name="count" value="1" class="form-control number-count" min="1"
+                            id="number-count-28831">
+                        <br>
+                        <p class="availability">Availability:</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="padding-45"></p>
+                        <p class="price-p content-mobile">$7.15</p>
+                        <button type="button" name="button" class="add-cart add-btn-16226">Add to cart</button>
+                        <div class="gray-div">
+                            <p>In stock</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="col-sm-12 padding-45">
-            <hr class="mini-hr">
+    </div>
+            </div>
+            
+<!-- 
+    <div class="row padding15m product" data-id="312-3M-9" data-name="312 3M 9 HTD Timing Belts" data-price="4.50"
+        data-brand="BESTORQ" data-image="images\bestorq-timing-belts-L-H.jpg">
+        <div class="row ">
+            <div class="col-sm-3 shadow bg-white product-img-wrapper">
+
+            </div>
+
+            <div class="col-sm-5">
+                <div class="heading">
+                    <span>312 3M 9 HTD Timing Belts</span>
+                </div>
+
+                <p class="cyan">
+                    <a href="https://hvhindustrial.com/brand/bestorq">BESTORQ</a>
+                </p>
+                <p class="model">MPN: <span class="underline">312-3M-9</span></p>
+                <p class="text">
+                    312-3M-9 HTD timing / synchronous belts are the third generation of high capacity industrial
+                    <span class="hided-text text">belts offering reliable, trouble-free and economical
+                        alternative to chain drives. Compared
+                        to chain drives...</span><span><a href="#" class="cyan more">Read more</a></span>
+                </p>
+
+            </div>
+            <div class="col-sm-2 col-sm-2-mobile price-box">
+                <h5 class="price">$4.50</h5>
+                <input type="number" value="1" min="1" class="form-control number-count qty" />
+                <p class="availability">
+                    Availability:
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <div class="hidden-price-count">
+                    <input type="number" value="1" min="1" class="form-control number-count qty" />
+                    <p>$4.50</p>
+                </div>
+
+                <button type="button" name="button" class="add-to-cart">
+                    ADD TO CART
+                </button>
+                <p class="cyan shipping"><span class="hidden-shipping">Typically </span>ships in: 2 days</p>
+
+            </div>
         </div>
     </div>
 
+    <div class="col-sm-12 padding-45">
+        <hr class="mini-hr">
+    </div>
+    <div class="row padding15m product" data-id="312-3M-6" data-name="312-3M-9 Bando HTD Timing Belt" data-price="5.01"
+        data-brand="Bando" data-image="images\high-torque-drive-timing-belts-3M (1).png">
+        <div class="row">
+            <div class="col-sm-3 shadow bg-white product-img-wrapper">
+                <img src="images\high-torque-drive-timing-belts-3M (1).png" alt="Timing Belt" class="img-fluid" />
+            </div>
+            <div class="col-sm-5">
+                <div class="heading">
+                    <span>312-3M-6 Bando HTD Timing Belts</span>
+                </div>
+                <p class="cyan">
+                    <a href="https://hvhindustrial.com/brand/bando">Bando</a>
+                </p>
+                <p class="model">MPN: <span class="underline">312-3M-6</span></p>
+                <p class="text">
+                    300-3M-6 high torque drive (HTD) timing belts’ curvilinear tooth design improves stress
+                    distribution to <span class="hided-text text">provide high horsepower ratings over a wide
+                        speed range and high torque
+                        transmission at low sp...</span><span><a href="#" class="cyan more">Read more</a></span>
+                </p>
+            </div>
+            <div class="col-sm-2 col-sm-2-mobile price-box">
+                <h5 class="price">$5.01</h5>
+                <input type="number" value="1" min="1" class="form-control number-count qty" />
+                <p class="availability">
+                    Availability:
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <div class="hidden-price-count">
+                    <input type="number" value="1" min="1" class="form-control number-count qty" />
+                    <p>$5.01</p>
+                </div>
+                <button class="add-to-cart">
+                    ADD TO CART
+                </button>
+                <p class="stock">In stock</p>
+                <p class="cyan shipping"><span class="hidden-shipping">Typically </span>ships in: 1 day</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 padding-45">
+        <hr class="mini-hr">
+    </div>
+    <div class="row padding15m product" data-id="612-3M-9" data-name="612-3M-9 Bando HTD Timing Belt" data-price="6.72"
+        data-brand="Bando" data-image="images\high-torque-drive-timing-belts-3M.png">
+        <div class="row">
+            <div class="col-sm-3 shadow bg-white product-img-wrapper">
+                <img src="images\high-torque-drive-timing-belts-3M.png" alt="Timing Belt" class="img-fluid" />
+            </div>
+            <div class="col-sm-5">
+                <div class="heading">
+                    <span>612-3M-9 Bando HTD Timing Belt</span>
+                </div>
+                <p class="cyan">
+                    <a href="https://hvhindustrial.com/brand/bestorq">Bando</a>
+                </p>
+                <p class="model">MPN: <span class="underline">312-3M-6</span></p>
+                <p class="text">
+                    612-3M-9 high torque drive (HTD) timing belts’ curvilinear tooth design improves stress
+                    distribution to <span class="hided-text text">provide high horsepower ratings over a wide
+                        speed range and high torque
+                        transmission at low sp...</span><span><a href="#" class="cyan more">Read more</a></span>
+                </p>
+            </div>
+            <div class="col-sm-2 col-sm-2-mobile price-box">
+                <h5 class=" price">$6.72</h5>
+                <input type="number" value="1" min="1" class="form-control number-count qty" />
+                <p class="availability">
+                    Availability:
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <div class="hidden-price-count">
+                    <input type="number" value="1" min="1" class="form-control number-count qty" />
+                    <p>$6.72</p>
+                </div>
+                <button class="add-to-cart">
+                    ADD TO CART
+                </button>
+                <p class="stock">In stock</p>
+                <p class="cyan shipping"><span class="hidden-shipping">Typically </span>ships in: 1 day</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 padding-45">
+        <hr class="mini-hr">
+    </div>
+    </div>
+    </div>
+ -->
 
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
