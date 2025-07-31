@@ -32,14 +32,10 @@ p {
   background-color: #f9f9f9;
   height: 55px !important;
   color: #333;
-
-
-
 }
 
 .navbar-inner {
   padding: 0 7% !important;
-
 }
 
 .contact-info a {
@@ -57,7 +53,6 @@ p {
   gap: 34px;
   height: 35px;
   line-height: 35px;
-  padding: 11px 0;
 
 }
 
@@ -197,9 +192,11 @@ p {
     cursor: pointer;
     z-index: 1000;
   }
-  .fa-bars{
+
+  .fa-bars {
     font-size: 20px;
   }
+
   .sign {
     justify-content: flex-end !important;
     gap: 20px;
@@ -207,5 +204,3 @@ p {
     width: 100%;
   }
 }
-
-

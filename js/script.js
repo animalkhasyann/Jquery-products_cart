@@ -5,12 +5,16 @@ $(document).ready(function () {
     const $btn = $(this);
     const $product = $btn.closest('.product');
     const id = $product.data('id');
-    const image=$product.data('image');
+    const image = $product.data('image');
     const name = $product.data('name');
     const price = parseFloat($product.data('price'));
     const qty = parseInt($product.find('.number-count').val());
+    const mpn = $product.data('mpn');
+    const shipping = $product.data('shipping');
+    const stock = $product.data('stock')
+    const manufacturer = $product.data('manufacturer')
 
-    const product = { id, image, name, price, qty };
+    const product = { id, image, name, manufacturer, mpn, price, qty, shipping, stock };
 
     let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
     const index = cart.findIndex(item => item.id === id);
@@ -18,11 +22,11 @@ $(document).ready(function () {
       cart[index].qty += qty;
     } else {
       cart.push(product);
-    } 
+    }
     sessionStorage.setItem('cart', JSON.stringify(cart));
     document.cookie = `cart=${encodeURIComponent(JSON.stringify(cart))}; path=/; max-age=86400`;
     updateCartCount();
-    $btn.text('ADDED') .addClass('added-btn').prop('disabled', true);
+    $btn.text('ADDED').addClass('added-btn').prop('disabled', true);
     setTimeout(() => {
       $btn.text('ADD TO CART').removeClass('added-btn').prop('disabled', false);
     }, 3000);
