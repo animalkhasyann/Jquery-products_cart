@@ -335,10 +335,28 @@ p:last-child {
     justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width:475px){
     .img-cart {
         width: 200px !important;
         height: 100px !important;
 
+    }
+}
+@media(max-width: 600px){
+    .buttons-block {
+    flex-direction: column;
+}
+.btn-checkout, .btn-gocheckout{
+    width: 100%;
+}
+}
+@media(max-width: 475px){
+  .img-cart {
+        width: 115px !important;
+        height: 115px !important;
+
+    }
+    .cart-second{
+        padding-left: 5px;
     }
 }
