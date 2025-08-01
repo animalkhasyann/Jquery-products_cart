@@ -349,6 +349,10 @@ p:last-child {
 .btn-checkout, .btn-gocheckout{
     width: 100%;
 }
+.modal-dialog {
+    width: 80% !important;
+    margin: 30px auto;
+}
 }
 @media(max-width: 475px){
   .img-cart {
