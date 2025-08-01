@@ -38,16 +38,19 @@ p {
   padding: 0 7% !important;
 }
 
-.contact-info a {
+a.contact {
   text-decoration: none;
   color: #65696e;
   font-size: 12px;
 }
 
+
+.contact-info a:hover i{
+  color: #ed1c24;
+}
 .contact-info a:hover {
   color: #ed1c24;
 }
-
 .contact-info {
   display: flex;
   gap: 34px;

@@ -247,10 +247,12 @@ p:last-child {
     color: #fff !important;
     background: #ea1d20 !important;
 }
-.btn-gocheckout:hover{
+
+.btn-gocheckout:hover {
     background: #fff !important;
     color: #ea1d20 !important;
 }
+
 .btn-checkout {
     width: 50%;
     -webkit-backface-visibility: hidden;
@@ -267,7 +269,76 @@ p:last-child {
     font-size: 14px !important;
     line-height: 25.5px !important;
 }
-.btn-checkout:hover{
-     background: #ea1d20 !important;
-     color: #fff !important;
+
+.btn-checkout:hover {
+    background: #ea1d20 !important;
+    color: #fff !important;
+}
+
+.modal,
+.modal-dialog {
+    z-index: 9999999;
+}
+
+.modal {
+    position: fixed;
+    top: 20% !important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+
+}
+
+.modal-dialog {
+    position: relative;
+    width: 600px !important;
+    margin: 30px auto;
+}
+
+#deletecart .modal-content {
+    border-radius: 8px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    border-top: none;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    flex-wrap: nowrap !important;
+}
+
+.modal-footer .btn {
+    padding: 10px 20px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .img-cart {
+        width: 200px !important;
+        height: 100px !important;
+
+    }
 }

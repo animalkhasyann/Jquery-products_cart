@@ -1,5 +1,14 @@
 $(document).ready(function () {
-  updateCartCount();
+  function updateCartBadge() {
+    let cart = $.cookie("cartItems") ? JSON.parse($.cookie("cartItems")) : [];
+    let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+    $('.cart-badge').text(totalQty);
+  }
+  updateCartBadge();
+
+  $(window).on('pageshow', function () {
+    updateCartBadge();
+  });
 
   $('.add-cart').click(function () {
     const $btn = $(this);
@@ -16,24 +25,22 @@ $(document).ready(function () {
 
     const product = { id, image, name, manufacturer, mpn, price, qty, shipping, stock };
 
-    let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
+    let cart = [];
+    if ($.cookie("cartItems")) {
+      cart = JSON.parse($.cookie("cartItems"));
+    }
     const index = cart.findIndex(item => item.id === id);
     if (index !== -1) {
       cart[index].qty += qty;
     } else {
       cart.push(product);
     }
-    sessionStorage.setItem('cart', JSON.stringify(cart));
-    document.cookie = `cart=${encodeURIComponent(JSON.stringify(cart))}; path=/; max-age=86400`;
-    updateCartCount();
+    $.cookie("cartItems", JSON.stringify(cart), { expires: 7, path: "/" });
+    updateCartBadge();
     $btn.text('ADDED').addClass('added-btn').prop('disabled', true);
     setTimeout(() => {
       $btn.text('ADD TO CART').removeClass('added-btn').prop('disabled', false);
     }, 3000);
   });
-  function updateCartCount() {
-    let cart = JSON.parse(sessionStorage.getItem('cart') || '[]');
-    let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
-    $('.cart-badge').text(totalQty);
-  }
+
 });

@@ -1,4 +1,5 @@
 function loadNavbar(containerId = 'navbar-container', file = 'navbar.html') {
+
   fetch(file)
     .then(response => response.text())
     .then(html => {
@@ -6,3 +7,6 @@ function loadNavbar(containerId = 'navbar-container', file = 'navbar.html') {
     })
     .catch(error => console.error('Navbar load error:', error));
 }
+
+
+
