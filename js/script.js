@@ -1,7 +1,10 @@
 $(document).ready(function () {
   function updateCartBadge() {
     let cart = $.cookie("cartItems") ? JSON.parse($.cookie("cartItems")) : [];
-    let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+    let totalQty = cart.reduce((sum, item) => {
+      const qty = parseInt(item.qty);
+      return sum + (isNaN(qty) ? 0 : qty);
+    }, 0);
     $('.cart-badge').text(totalQty);
   }
   updateCartBadge();
@@ -18,6 +21,7 @@ $(document).ready(function () {
     const name = $product.data('name');
     const price = parseFloat($product.data('price'));
     const qty = parseInt($product.find('.number-count').val());
+    if (isNaN(qty) || qty < 1) qty = 1;
     const mpn = $product.data('mpn');
     const shipping = $product.data('shipping');
     const stock = $product.data('stock')
