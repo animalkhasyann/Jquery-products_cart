@@ -1,4 +1,12 @@
 function loadCart() {
+$(function () {
+  if ($.cookie("cartItems") && !$.cookie("items")) {
+    const oldCart = $.cookie("cartItems");
+    $.cookie("items", oldCart, { expires: 7, path: "/" });
+    $.removeCookie("cartItems", { path: "/" });
+    console.log('✅ Migrated cartItems → items');
+  }
+});
     $(document).ready(function () {
         $('#cartContents').on('click', '.plus', function () {
             const index = $(this).data('index');
@@ -24,14 +32,14 @@ function loadCart() {
 
         $('#deletecart .btn-gocheckout').on('click', function () {
             const index = parseInt($('#delete-cart-input').val());
-            let cart = $.cookie("cartItems") ? JSON.parse($.cookie("cartItems")) : [];
+            let cart = $.cookie("items") ? JSON.parse($.cookie("items")) : [];
 
             if (cart[index]) {
                 cart.splice(index, 1);
                 if (cart.length === 0) {
-                    $.removeCookie("cartItems", { path: '/' });
+                    $.removeCookie("items", { path: '/' });
                 } else {
-                    $.cookie("cartItems", JSON.stringify(cart), { path: '/' });
+                    $.cookie("items", JSON.stringify(cart), { path: '/' });
                 }
             }
 
@@ -41,7 +49,7 @@ function loadCart() {
     });
 
     function loadCartData() {
-        const cartStr = $.cookie("cartItems");
+        const cartStr = $.cookie("items");
         const cart = cartStr ? JSON.parse(cartStr) : [];
         let subtotal = 0;
         let totalQty = 0;
@@ -83,12 +91,12 @@ function loadCart() {
         }
     }
     function updateCartBadge() {
-        let cart = $.cookie("cartItems") ? JSON.parse($.cookie("cartItems")) : [];
+        let cart = $.cookie("items") ? JSON.parse($.cookie("items")) : [];
         let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
         $('.cart-badge').text(totalQty);
     }
     function updateQty(index, change, force = null) {
-        let cart = $.cookie("cartItems") ? JSON.parse($.cookie("cartItems")) : [];
+        let cart = $.cookie("items") ? JSON.parse($.cookie("items")) : [];
         if (!cart[index]) return;
         if (force !== null) {
             cart[index].qty = force;
@@ -96,7 +104,7 @@ function loadCart() {
             cart[index].qty = Math.max(1, (cart[index].qty ?? 1) + change);
         }
 
-        $.cookie("cartItems", JSON.stringify(cart), { path: '/' });
+        $.cookie("items", JSON.stringify(cart), { path: '/' });
         loadCartData();
     }
 }
