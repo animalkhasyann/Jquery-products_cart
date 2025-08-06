@@ -183,7 +183,16 @@ p:last-child {
     padding: 1px 5px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px;
+}
+
+.btn-close-cart,
+.btn-close-cart:focus,
+.btn-close-cart:active,
+.btn-close-cart:focus-visible,
+.btn-close-cart:focus-within {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .cart-qty {
