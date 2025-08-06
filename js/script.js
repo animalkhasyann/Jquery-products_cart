@@ -4,7 +4,6 @@ $(function () {
     const oldCart = $.cookie("cartItems");
     $.cookie("items", oldCart, { expires: 7, path: "/" });
     $.removeCookie("cartItems", { path: "/" });
-    console.log('✅ Migrated cartItems → items');
   }
 });
   function updateCartBadge() {
@@ -19,17 +18,17 @@ $(function () {
   });
 
   $('.add-cart').click(function () {
-    const $btn = $(this);
-    const $product = $btn.closest('.product');
-    const id = $product.data('id');
-    const image = $product.data('image');
-    const name = $product.data('name');
-    const price = parseFloat($product.data('price'));
-    const qty = parseInt($product.find('.number-count').val());
-    const mpn = $product.data('mpn');
-    const shipping = $product.data('shipping');
-    const stock = $product.data('stock')
-    const manufacturer = $product.data('manufacturer')
+    let $btn = $(this);
+    let $product = $btn.closest('.product');
+    let id = $product.data('id');
+    let image = $product.data('image');
+    let name = $product.data('name');
+    let price = parseFloat($product.data('price'));
+    let qty = parseInt($product.find('.number-count').val());
+    let mpn = $product.data('mpn');
+    let shipping = $product.data('shipping');
+    let stock = $product.data('stock')
+    let manufacturer = $product.data('manufacturer')
 
     const product = { id, image, name, manufacturer, mpn, price, qty, shipping, stock };
 

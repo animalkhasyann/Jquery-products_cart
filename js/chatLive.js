@@ -24,3 +24,4 @@ function chat() {
         };
     });
 }
+ chat();

@@ -14,16 +14,13 @@ p {
   font-size: 1em;
 }
 
-.mini-hr {
-  margin-top: 1px;
+.product,
+.top-border {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-hr {
-  margin: 15px auto;
-  width: 100%;
-  border: 0;
-
-}
 
 a,
 button {
@@ -118,10 +115,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 .add-cart {

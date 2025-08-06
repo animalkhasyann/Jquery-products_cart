@@ -7,6 +7,7 @@ function loadNavbar(containerId = 'navbar-container', file = 'navbar.html') {
     })
     .catch(error => console.error('Navbar load error:', error));
 }
+loadNavbar();
 
 
 

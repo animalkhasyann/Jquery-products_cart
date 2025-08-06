@@ -243,6 +243,7 @@ p:last-child {
 }
 
 .buttons-block {
+    justify-content: flex-end;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -250,7 +251,7 @@ p:last-child {
 }
 
 .btn-gocheckout {
-    width: 50%;
+    width: auto;
     height: 40px;
     border-radius: 0 !important;
     text-transform: uppercase;
@@ -268,7 +269,7 @@ p:last-child {
 }
 
 .btn-checkout {
-    width: 50%;
+    width: auto;
     -webkit-backface-visibility: hidden;
     display: inline-block !important;
     box-shadow: 0 0 1px transparent;
